@@ -29,6 +29,7 @@ a{
 
 button{
     border: none;
+    font-size: 1.2rem;
 }
 
 ul{
@@ -42,6 +43,11 @@ h2{
 
 h3{
     font-size: 1.5rem;
+}
+
+p{
+    font-size: 1.2rem;
+    line-height: 1.6rem;
 }
 
 
@@ -162,6 +168,7 @@ button.bg-color_white{
     width: 50%;
     height: 100%;
     padding: 10% 0;
+    text-align: center;
 }
 
 
@@ -178,7 +185,8 @@ main .container:nth-child(even){
 }
 
 main .container:last-of-type{
-    height: 40rem;
+    height: 60rem;
+    text-align: center;
 }
 
 main .container img{
@@ -187,6 +195,11 @@ main .container img{
 
 main .container .text-content{
     width: 40%;
+}
+
+main .text-content h2,
+main .text-content p{
+    padding-top: 2rem;
 }
 
 main .container:nth-child(odd).flex .text-content{
@@ -200,11 +213,11 @@ main .container:last-of-type{
 main .container:last-of-type img{
     display: block;
     width: 100%;
-    height: 50%;
+    height: 70%;
 }
 
 main .container:last-of-type .text-content{
-    height: 30%;
+    height: 20%;
     width: 100%;
 }
 
