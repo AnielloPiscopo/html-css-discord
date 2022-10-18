@@ -2,6 +2,11 @@
 #main-header{
     background-color: #255ee9;
 }
+
+
+
+
+
 /** GENERIC STYLE INFORMATIONS */
 
 /*todo Universal Selector */
@@ -16,6 +21,10 @@
 /*todo Tag HTML */
 body{
     font-family: sans-serif;
+}
+
+a{
+    text-decoration: none;
 }
 
 button{
@@ -56,7 +65,8 @@ ul{
 
 /*todo Combination of Elements  */
 header#main-header,
-footer{
+footer,
+nav a{
     color: #ffff;
 }
 
