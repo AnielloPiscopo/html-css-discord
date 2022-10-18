@@ -308,6 +308,15 @@ footer ul.flex{
 
 footer .language{
     width: 10rem;
+    padding: 1rem 0;
+}
+
+footer .language img{
+    width: 20%;
+}
+
+footer .social-icons{
+    padding-right:1rem
 }
 
 
