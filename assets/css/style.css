@@ -30,6 +30,8 @@ a{
 button{
     border: none;
     font-size: 1.2rem;
+    padding: 1rem;
+    border-radius: 2rem;
 }
 
 ul{
@@ -42,12 +44,12 @@ h2{
 }
 
 h3{
-    font-size: 1.5rem;
+    font-size: 1.7rem;
 }
 
 p{
     font-size: 1.2rem;
-    line-height: 1.6rem;
+    line-height: 1.8rem;
 }
 
 
@@ -88,12 +90,18 @@ p{
     background-color: #23272a;
 }
 
+.bg-color_light-grey{
+    background-color: #f6f6f6;
+}
+
 .download::before{
     content: '\2193';
+    padding-right: 0.5rem;
 }
 
 .language::after{
     content: '\2304';
+    padding-left: 0.5rem;
 }
 
 
@@ -114,6 +122,12 @@ button.bg-color_white{
     color: black;
 }
 
+button.small{
+    font-size: 1rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+
 
 
 
@@ -132,15 +146,20 @@ button.bg-color_white{
     padding-top: 1rem;
     padding-bottom: 1rem;
     background-color: #255ee9;
+    align-items: center;
 }
 
-#main-header .logo,
-#main-header button{
-    width: 20%;
+#main-header .logo{
+    width: 10%;
+}
+
+#main-header nav button{
+    width: 7%;
+    font-size: 1rem;
 }
 
 #main-header ul{
-    width: 60%;
+    width: 83%;
 }
 
 #main-header ul.flex{
@@ -153,39 +172,42 @@ button.bg-color_white{
     padding: 0 1.5rem;
 }
 
-#main-header button{
-    text-align: end;
-}
-
 
 /* Header Jumbodron */
 #jumbodron{
     height: 85%;
     padding: 3rem 0;
+    background-image: url('../img/jumbo.png');
+    background-size: cover;
 }
 
 #jumbodron .text-content.container{
     width: 50%;
     height: 100%;
-    padding: 10% 0;
+    padding: 5% 0;
     text-align: center;
+}
+
+#jumbodron .text-content p{
+    padding: 2rem 0 1rem 0;
+}
+
+#jumbodron button:first-of-type{
+    margin-right: 2rem;
 }
 
 
 /*todo Main Section */
+
+/* Main Containers */
 main .container{
     padding-top: 3rem;
     padding-bottom: 3rem;
     height: 37rem;
-    background-color: white;
-}
-
-main .container:nth-child(even){
-    background-color: #f6f6f6;
 }
 
 main .container:last-of-type{
-    height: 70rem;
+    height: 80rem;
     text-align: center;
 }
 
@@ -199,10 +221,10 @@ main .container .text-content{
 
 main .text-content h2,
 main .text-content p{
-    padding-top: 3rem;
+    padding-top: 2rem;
 }
 
-main .container:nth-child(odd).flex .text-content{
+main .container.flex.bg-color_white .text-content{
     order: 1;
 }
 
@@ -222,42 +244,70 @@ main .container:last-of-type .text-content{
     padding: 3rem 2rem 0 2rem;
 }
 
-main .container .download-section{
+main .download-section{
     height: 5rem;
+}
+
+main .download-section h3{
+    width: 55%;
+    margin: 0 auto;
+    padding: 3rem 0;
+    background-image: url('../img/stars.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+/* Main Wrapper */
+svg.wrapper{
+    display: block;
+}
+
+.wrapper.bg-color_light-grey{
+    color: #f6f6f6;
+    background-color: white;
+}
+
+.wrapper.bg-color_white{
+    background-color: #f6f6f6;
+    color: white;
 }
 
 
 /*todo Footer Section */
-footer{
+footer.container{
     background-color: #23272a;
+    height: 40rem;
+    padding-top: 0.5rem;
 }
 
+/* Footer Navbar */
 footer aside h3,
 footer ul li:first-of-type{
     color: #7289da;
 }
 
-
-/* Footer Navbar */
-footer.container{
-    height: 40rem;
-    padding-top: 0.5rem;
-}
-
 footer nav{
     height: 80%;
+    padding-top: 5rem;
 }
 
 footer aside{
-    width: 30%;
+    width: 25%;
+    padding-right: 1rem;
 }
 
 footer ul{
-    width: calc(70%/4);
+    width: calc(75%/4);
+    line-height: 2.5rem;
 }
 
 footer ul.flex{
     flex-direction: column;
+}
+
+footer .language{
+    width: 10rem;
 }
 
 
