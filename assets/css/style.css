@@ -1,0 +1,228 @@
+/*! MOMENTANEAL CHANGES */
+header nav{
+     background-color: blue; 
+}
+
+#jumbodron{
+    background-color: brown;
+}
+
+.text-content{
+    background-color: pink;
+}
+
+.download{
+    background-color: red;
+}
+
+img{
+    background-color: aqua;
+}
+
+header nav{
+    background: yellow;
+}
+
+footer{
+    background-color: black;
+    color: white;
+}
+
+footer ul{
+    background-color: beige;
+    color: black;
+}
+
+footer aside{
+    background-color: brown;
+}
+
+hr{
+    color: blue;
+}
+
+
+
+
+
+/** GENERIC STYLE INFORMATIONS */
+
+/*todo Universal Selector */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/*todo Tag HTML */
+button{
+    border: none;
+}
+
+ul{
+    list-style: none;
+}
+
+
+
+/*todo Classes */
+.container{
+    padding: 0 15%;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.clearfix::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.fl-lf{
+    float: left;
+}
+
+.fl-rg{
+    float: right;
+}
+
+
+
+
+
+/** SPECIFIC STYLE INFORMATIONS */
+
+/*todo Header Section */
+#main-header{
+    height: 30rem;
+}
+
+
+/* Header Navbar */
+#main-header nav{
+    height: 15%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+#main-header .logo,
+#main-header button{
+    width: 20%;
+}
+
+#main-header ul{
+    width: 60%;
+}
+
+#main-header ul.flex{
+    align-items: center;
+    justify-content: space-around;
+    padding: 0.5rem calc(100%/3);
+}
+
+#main-header ul.flex li{
+    padding: 0 1.5rem;
+}
+
+#main-header button{
+    text-align: end;
+}
+
+
+/* Header Jumbodron */
+#jumbodron{
+    height: 85%;
+    padding: 3rem 0;
+}
+
+#jumbodron .text-content.container{
+    width: 50%;
+    height: 100%;
+    padding: 10% 0;
+}
+
+
+/*todo Main Section */
+main .container{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    height: 30rem;
+    background-color: white;
+}
+
+main .container:nth-child(even){
+    background-color: grey;
+}
+
+main .container:last-of-type{
+    height: 40rem;
+}
+
+main .container img{
+    width: 60%;
+}
+
+main .container .text-content{
+    width: 40%;
+}
+
+main .container:nth-child(odd).flex .text-content{
+    order: 1;
+}
+
+main .container:last-of-type{
+    display: block;
+}
+
+main .container:last-of-type img{
+    display: block;
+    width: 100%;
+    height: 50%;
+}
+
+main .container:last-of-type .text-content{
+    height: 30%;
+    width: 100%;
+}
+
+main .container .download{
+    height: 20%;
+}
+
+
+
+/*todo Footer Section */
+footer.container{
+    height: 30rem;
+    padding-top: 0.5rem;
+}
+
+footer nav{
+    height: 80%;
+}
+
+footer .social-links{
+    width: 30%;
+}
+
+footer ul{
+    width: calc(70%/4);
+}
+
+footer ul.flex{
+    flex-direction: column;
+}
+
+footer .logo,
+footer button{
+    width: 10%;
+}
+
+footer hr{
+    margin: 1.5rem 0;
+}
