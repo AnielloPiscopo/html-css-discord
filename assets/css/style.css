@@ -199,7 +199,7 @@ main .container .text-content{
 
 main .text-content h2,
 main .text-content p{
-    padding-top: 2rem;
+    padding-top: 3rem;
 }
 
 main .container:nth-child(odd).flex .text-content{
