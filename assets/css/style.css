@@ -1,50 +1,7 @@
-/*! MOMENTANEAL CHANGES */
-header nav{
-     background-color: blue; 
+/*!Momentanel Styles*/
+#main-header{
+    background-color: #255ee9;
 }
-
-#jumbodron{
-    background-color: brown;
-}
-
-.text-content{
-    background-color: pink;
-}
-
-.download{
-    background-color: red;
-}
-
-img{
-    background-color: aqua;
-}
-
-header nav{
-    background: yellow;
-}
-
-footer{
-    background-color: black;
-    color: white;
-}
-
-footer ul{
-    background-color: beige;
-    color: black;
-}
-
-footer aside{
-    background-color: brown;
-}
-
-hr{
-    color: blue;
-}
-
-
-
-
-
 /** GENERIC STYLE INFORMATIONS */
 
 /*todo Universal Selector */
@@ -93,6 +50,14 @@ ul{
 
 
 
+/*todo Combination of Elements  */
+header#main-header,
+footer{
+    color: #ffff;
+}
+
+
+
 
 
 /** SPECIFIC STYLE INFORMATIONS */
@@ -108,6 +73,7 @@ ul{
     height: 15%;
     padding-top: 1rem;
     padding-bottom: 1rem;
+    background-color: #255ee9;
 }
 
 #main-header .logo,
@@ -197,6 +163,12 @@ main .container .download{
 
 
 /*todo Footer Section */
+footer{
+    background-color: #23272a;
+}
+
+
+/* Footer Navbar */
 footer.container{
     height: 30rem;
     padding-top: 0.5rem;
@@ -218,11 +190,16 @@ footer ul.flex{
     flex-direction: column;
 }
 
+
+/* Footer logo-container */
 footer .logo,
 footer button{
     width: 10%;
 }
 
+
+/* Footer HR */
 footer hr{
     margin: 1.5rem 0;
+    color: #3a4460;
 }
