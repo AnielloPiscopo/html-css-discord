@@ -79,7 +79,15 @@ h3{
 }
 
 .bg-color_black{
-    background-color: black;
+    background-color: #23272a;
+}
+
+.download::before{
+    content: '\2193';
+}
+
+.language::after{
+    content: '\2304';
 }
 
 
