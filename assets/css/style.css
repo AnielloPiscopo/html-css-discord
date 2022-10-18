@@ -7,7 +7,6 @@
 
 
 
-
 /** GENERIC STYLE INFORMATIONS */
 
 /*todo Universal Selector */
@@ -71,6 +70,18 @@ h3{
     float: right;
 }
 
+.bg-color_turquoise-blue{
+    background-color: #7289da;;
+}
+
+.bg-color_white{
+    background-color: white;
+}
+
+.bg-color_black{
+    background-color: black;
+}
+
 
 
 /*todo Combination of Elements  */
@@ -78,6 +89,15 @@ header#main-header,
 footer,
 nav a{
     color: #ffff;
+}
+
+button.bg-color_turquoise-blue,
+button.bg-color_black{
+    color: white;
+}
+
+button.bg-color_white{
+    color: black;
 }
 
 
@@ -189,6 +209,11 @@ main .container .download-section{
 /*todo Footer Section */
 footer{
     background-color: #23272a;
+}
+
+footer aside h3,
+footer ul li:first-of-type{
+    color: #7289da;
 }
 
 
