@@ -268,9 +268,8 @@ svg.wrapper{
     background-color: white;
 }
 
-.wrapper.bg-color_white{
-    background-color: #f6f6f6;
-    color: white;
+.wrapper.rotate-x{
+    transform: rotateX(3.142rad);
 }
 
 
