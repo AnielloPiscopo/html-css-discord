@@ -1,6 +1,6 @@
 /** GENERIC STYLE INFORMATIONS */
 
-/*todo Universal Selector */
+/*? Universal Selector */
 *{
     box-sizing: border-box;
     margin: 0;
@@ -9,7 +9,7 @@
 
 
 
-/*todo Tag HTML */
+/*? Tag HTML */
 body{
     font-family: sans-serif;
 }
@@ -45,12 +45,9 @@ p{
 
 
 
-/*todo Classes */
-.container{
-    padding: 0 11%;
-    margin: 0 auto;
-}
+/*? Classes */
 
+/* Displays and floats */
 .flex{
     display: flex;
 }
@@ -69,6 +66,7 @@ p{
     float: right;
 }
 
+/* Bg-colors */
 .bg-color_turquoise-blue{
     background-color: #7289da;;
 }
@@ -85,6 +83,12 @@ p{
     background-color: #f6f6f6;
 }
 
+/* Other */
+.container{
+    padding: 0 11%;
+    margin: 0 auto;
+}
+
 .download::before{
     content: '\2193';
     padding-right: 0.5rem;
@@ -97,7 +101,7 @@ p{
 
 
 
-/*todo Combination of Elements  */
+/*? Combination of Elements  */
 header#main-header,
 footer,
 nav a{
@@ -125,7 +129,7 @@ button.small{
 
 /** SPECIFIC STYLE INFORMATIONS */
 
-/*todo Header Section */
+/*? Header Section */
 #main-header{
     height: 37rem;
 }
@@ -188,7 +192,7 @@ button.small{
 }
 
 
-/*todo Main Section */
+/*? Main Section */
 
 /* Main Containers */
 main .container{
@@ -272,7 +276,7 @@ svg.wrapper{
 }
 
 
-/*todo Footer Section */
+/*? Footer Section */
 footer.container{
     background-color: #23272a;
     height: 40rem;
